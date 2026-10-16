@@ -3,7 +3,7 @@ name: Andjela Todorovic
 role: PhD Student
 group: phd
 order: 30
-photo: ""   # e.g. /images/people/andjela.jpg
+photo: /images/people/andjela.jpg
 links:
   # - { label: Email, url: "mailto:you@imperial.ac.uk" }
   # - { label: Google Scholar, url: "https://scholar.google.com/..." }
