@@ -3,8 +3,8 @@ tagline: "Learning · Reasoning · Explanation"
 description: >-
   TRACE is a research group at Imperial College London working on
   interpretability and explainability across learning and symbolic systems.
-url: "https://trace-lab-imperial.github.io"
-github_org: "https://github.com/TRACE-Lab-Imperial"
+url: "https://the-trace-lab.github.io"
+github_org: "https://github.com/the-trace-lab"
 baseurl: ""                           # leave empty if repo is <org>.github.io
 github_org: "https://github.com/trace-lab"
 logo: /images/logo/logo.png
