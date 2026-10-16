@@ -7,7 +7,7 @@ url: "https://trace-lab-imperial.github.io"
 github_org: "https://github.com/TRACE-Lab-Imperial"
 baseurl: ""                           # leave empty if repo is <org>.github.io
 github_org: "https://github.com/trace-lab"
-logo: /images/logo.png
+logo: /images/logo/logo.png
 group_photo: ""   # e.g. /images/group_photo.jpg (replaces the logo on the home page)
 
 collections:
