@@ -1,0 +1,15 @@
+---
+title: News
+permalink: /news/
+---
+<div class="wrap page">
+  <p class="eyebrow">News</p>
+  <h1>All news</h1>
+  {% assign news = site.data.news | sort: "date" | reverse %}
+  {% assign years = news | group_by_exp: "n", "n.date | date: '%Y'" %}
+  {% for y in years %}
+    {% unless forloop.first %}{% assign tv = forloop.index | modulo: 3 | plus: 1 %}{% include trace-line.html variant=tv %}{% endunless %}
+    <h2 class="year">{{ y.name }}</h2>
+    {% for item in y.items %}{% include news-item.html item=item %}{% endfor %}
+  {% endfor %}
+</div>

@@ -1,0 +1,45 @@
+---
+title: Home
+permalink: /
+---
+<section class="hero wrap">
+  {% if site.group_photo and site.group_photo != "" %}
+  <img class="group-photo" src="{{ site.group_photo | relative_url }}" alt="The TRACE group">
+  {% else %}
+  <img class="hero-logo" src="{{ '/images/logo.png' | relative_url }}" alt="TRACE: Learning · Reasoning · Explanation">
+  {% endif %}
+
+  <p class="pillars-text" aria-label="Learning, Reasoning, Explanation">
+    <span class="w1">Learning</span><span class="node"></span>
+    <span class="w2">Reasoning</span><span class="node"></span>
+    <span class="w3">Explanation</span>
+  </p>
+
+  <p class="lead">TRACE is a research group in the Department of Computing at Imperial College London. Our goal is to develop methods to make AI transparent and safe, with a focus on explainability across learning and symbolic systems.</p>
+
+  <div class="buttons">
+    <a class="btn primary" href="{{ '/research/' | relative_url }}">Our research →</a>
+    <a class="btn" href="{{ '/team/' | relative_url }}">Meet the team</a>
+  </div>
+
+    <p class="join">Interested in joining TRACE? Have a look at our
+  <a href="{{ '/vacancies/' | relative_url }}">vacancies</a>.</p>
+</section>
+
+<div class="wrap">{% include trace-line.html variant=1 %}</div>
+
+<section class="block wrap">
+  <div class="section-head"><h2>Latest news</h2><a href="{{ '/news/' | relative_url }}">All news →</a></div>
+  {% assign news = site.data.news | sort: "date" | reverse %}
+  {% for item in news limit: 4 %}{% include news-item.html item=item %}{% endfor %}
+</section>
+
+<div class="wrap">{% include trace-line.html variant=2 %}</div>
+
+<section class="block wrap">
+  <div class="section-head"><h2>The team</h2><a href="{{ '/team/' | relative_url }}">Full team page →</a></div>
+  {% assign people = site.members | where_exp: "m", "m.group != 'alumni'" | sort: "order" %}
+  <div class="people">
+    {% for person in people %}{% include person-card.html person=person %}{% endfor %}
+  </div>
+</section>

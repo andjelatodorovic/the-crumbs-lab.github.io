@@ -1,0 +1,41 @@
+title: TRACE
+tagline: "Learning · Reasoning · Explanation"
+description: >-
+  TRACE is a research group at Imperial College London working on
+  interpretability and explainability across learning and symbolic systems.
+url: "https://trace-lab-imperial.github.io"
+github_org: "https://github.com/TRACE-Lab-Imperial"
+baseurl: ""                           # leave empty if repo is <org>.github.io
+github_org: "https://github.com/trace-lab"
+logo: /images/logo.png
+group_photo: ""   # e.g. /images/group_photo.jpg (replaces the logo on the home page)
+
+collections:
+  members:
+    output: true
+    permalink: /members/:name/
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+defaults:
+  - scope: { path: "" }
+    values: { layout: default }
+  - scope: { path: "", type: members }
+    values: { layout: member }
+  - scope: { path: "", type: projects }
+    values: { layout: project }
+
+plugins:
+  - jekyll-seo-tag
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - make-trace-site.sh
+  - update-*.sh
+  - "cv/*.tex"
+  - "cv/*.bib"
+  - "cv/*.sty"
+  - "cv/Makefile"

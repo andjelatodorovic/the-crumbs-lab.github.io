@@ -1,0 +1,22 @@
+{% assign section = page.url %}
+{% if page.collection == 'members' %}{% assign section = '/team/' %}
+{% elsif page.collection == 'projects' %}{% assign section = '/projects/' %}{% endif %}
+{% assign mark = site.static_files | where: "path", "/images/logo-mark.png" | first %}
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      {% if mark %}
+      <img src="{{ '/images/logo-mark.png' | relative_url }}" alt="TRACE">
+      {% else %}
+      <img src="{{ '/images/logo.png' | relative_url }}" alt="TRACE">
+      {% endif %}
+    </a>
+    <nav>
+      <ul>
+        {% for item in site.data.navigation %}
+        <li><a href="{{ item.url | relative_url }}" {% if section == item.url %}class="active"{% endif %}>{{ item.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>

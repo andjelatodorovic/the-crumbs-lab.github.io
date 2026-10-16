@@ -1,0 +1,7 @@
+{% assign p = include.person %}
+{% if p.photo and p.photo != "" %}
+  <img class="avatar {{ include.size }}" src="{{ p.photo | relative_url }}" alt="{{ p.name }}">
+{% else %}
+  {% assign parts = p.name | split: " " %}
+  <div class="avatar placeholder {{ include.size }}" aria-hidden="true">{{ parts.first | slice: 0 }}{% if parts.size > 1 %}{{ parts.last | slice: 0 }}{% endif %}</div>
+{% endif %}

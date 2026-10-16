@@ -1,0 +1,22 @@
+---
+title: People
+permalink: /team/
+---
+<div class="wrap page">
+  <p class="eyebrow">People</p>
+  <h1>The team</h1>
+  {% assign shown = 0 %}
+  {% for g in site.data.team_groups %}
+    {% assign members = site.members | where: "group", g.key | sort: "order" %}
+    {% if members.size > 0 %}
+      {% if shown > 0 %}{% assign tv = shown | modulo: 3 | plus: 1 %}{% include trace-line.html variant=tv %}{% endif %}
+      <section class="team-group">
+        <h2>{{ g.title }}</h2>
+        <div class="people">
+          {% for person in members %}{% include person-card.html person=person %}{% endfor %}
+        </div>
+      </section>
+      {% assign shown = shown | plus: 1 %}
+    {% endif %}
+  {% endfor %}
+</div>

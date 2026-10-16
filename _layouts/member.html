@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<article class="wrap page">
+  <a class="back" href="{{ '/team/' | relative_url }}">← All people</a>
+  <div class="profile-head">
+    {% include avatar.html person=page size="lg" %}
+    <div>
+      <p class="role">{{ page.role }}{% if page.role_note %} · {{ page.role_note }}{% endif %}</p>
+      <h1>{{ page.name }}</h1>
+      {% include links.html links=page.links %}
+      {% if page.cv %}<a class="btn primary cv-btn" href="{{ page.cv | relative_url }}">Download CV (PDF)</a>{% endif %}
+    </div>
+  </div>
+  <div class="prose">{{ content }}</div>
+</article>

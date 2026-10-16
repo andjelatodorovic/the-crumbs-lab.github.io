@@ -1,0 +1,5 @@
+{% if include.links %}
+<ul class="links">
+  {% for l in include.links %}<li><a href="{{ l.url }}">{{ l.label }}</a></li>{% endfor %}
+</ul>
+{% endif %}

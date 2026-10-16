@@ -1,0 +1,7 @@
+- { title: Home,      url: / }
+- { title: Research,  url: /research/ }
+- { title: Projects,  url: /projects/ }
+- { title: People,    url: /team/ }
+- { title: News,      url: /news/ }
+- { title: Vacancies, url: /vacancies/ }
+- { title: Contact,   url: /contact/ }

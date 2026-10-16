@@ -1,0 +1,4 @@
+<article class="news-item">
+  <time datetime="{{ include.item.date | date: '%Y-%m-%d' }}">{{ include.item.date | date: "%-d %b %Y" }}</time>
+  <div class="news-text">{{ include.item.text | markdownify }}</div>
+</article>

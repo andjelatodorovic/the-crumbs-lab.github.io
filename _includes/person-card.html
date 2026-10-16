@@ -1,0 +1,5 @@
+<a class="person" href="{{ include.person.url | relative_url }}">
+  {% include avatar.html person=include.person %}
+  <h3>{{ include.person.name }}</h3>
+  <p class="role">{{ include.person.role }}{% if include.person.role_note %}<br>{{ include.person.role_note }}{% endif %}</p>
+</a>

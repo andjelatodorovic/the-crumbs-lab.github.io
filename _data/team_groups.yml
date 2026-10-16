@@ -1,0 +1,5 @@
+- { key: pi,      title: Principal Investigator }
+- { key: postdoc, title: Postdoctoral Researchers }
+- { key: phd,     title: PhD Students }
+- { key: visitor, title: Visitors }
+- { key: alumni,  title: Alumni }
