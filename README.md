@@ -1,6 +1,6 @@
-# TRACE website
+# CRUMBS website
 
-Jekyll site for the TRACE group at Imperial College London.
+Jekyll site for the CRUMBS group at Imperial College London.
 
 ## Preview locally
     bundle install
@@ -13,4 +13,4 @@ Then open http://localhost:4000
 - Projects: one file per project in `_projects/`
 - Vacancies, Contact, Research: `vacancies.md`, `contact.md`, `research.html`
 - Group photo: set `group_photo` in `_config.yml`
-- Header logo: `images/logo-mark.png` (falls back to `images/logo.png`)
+- Logo: `images/logo/logo.png` (wordmark, transparent), `images/logo/square.png` and `favicon.png` (icon); `logo-original.jpg` is the source file

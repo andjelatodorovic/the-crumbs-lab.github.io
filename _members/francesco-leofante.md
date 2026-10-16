@@ -1,7 +1,7 @@
 ---
 name: Francesco Leofante
 role: Assistant Professor
-role_note: PI of TRACE
+role_note: PI of CRUMBS
 group: pi
 order: 1
 photo: /images/people/francesco.jpg

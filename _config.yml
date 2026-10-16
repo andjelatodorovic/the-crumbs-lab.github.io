@@ -1,13 +1,13 @@
-title: TRACE
+title: CRUMBS
 tagline: "Learning · Reasoning · Explanation"
 description: >-
-  TRACE is a research group at Imperial College London working on
+  CRUMBS is a research group at Imperial College London working on
   interpretability and explainability across learning and symbolic systems.
-url: "https://the-trace-lab.github.io"
-github_org: "https://github.com/the-trace-lab"
+url: "https://the-crumbs-lab.github.io"
 baseurl: ""                           # leave empty if repo is <org>.github.io
-github_org: "https://github.com/trace-lab"
+github_org: "https://github.com/the-crumbs-lab"
 logo: /images/logo/logo.png
+favicon: /images/logo/favicon.png
 group_photo: ""   # e.g. /images/group_photo.jpg (replaces the logo on the home page)
 
 collections:
