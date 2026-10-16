@@ -3,7 +3,7 @@ name: Mansi
 role: PhD Student
 group: phd
 order: 20
-photo: /images/people/mansi.jpg
+photo: /images/people/mansi.png
 links:
   # - { label: Email, url: "mailto:you@imperial.ac.uk" }
   # - { label: Google Scholar, url: "https://scholar.google.com/..." }
