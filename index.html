@@ -10,19 +10,39 @@ permalink: /
   {% endif %}
 
   {% assign crumbs_first = site.data.crumbs_sentences | first %}
-  <p class="crumbs-sentence" id="crumbs-sentence">{{ crumbs_first | replace: "[", '<span class="acro">' | replace: "]", "</span>" }}</p>
+  <p class="crumbs-sentence" id="crumbs-sentence"><span>{{ crumbs_first | replace: "[", '<span class="acro">' | replace: "]", "</span>" }}</span></p>
   <script>
   (function () {
     var all = {{ site.data.crumbs_sentences | jsonify }};
-    if (!all || all.length < 2) return;
+    var el = document.getElementById("crumbs-sentence");
+    if (!el || !all || all.length < 2) return;
+    var SECONDS = 6;  /* how long each sentence stays */
+    var esc = function (t) { return t.replace(/&/g, "&amp;").replace(/</g, "&lt;"); };
+    var show = function (i) { el.innerHTML = "<span>" + esc(all[i]).replace(/\[([^\]]+)\]/g, '<span class="acro">$1</span>') + "</span>"; };
+    var pick = function (not) { var i; do { i = Math.floor(Math.random() * all.length); } while (i === not); return i; };
+
     var last = -1;
     try { last = parseInt(sessionStorage.getItem("crumbs-last"), 10); } catch (e) {}
-    var i;
-    do { i = Math.floor(Math.random() * all.length); } while (i === last);
-    try { sessionStorage.setItem("crumbs-last", i); } catch (e) {}
-    var esc = function (t) { return t.replace(/&/g, "&amp;").replace(/</g, "&lt;"); };
-    document.getElementById("crumbs-sentence").innerHTML =
-      esc(all[i]).replace(/\[([^\]]+)\]/g, '<span class="acro">$1</span>');
+    var cur = pick(last);
+    show(cur);
+    var remember = function () { try { sessionStorage.setItem("crumbs-last", cur); } catch (e) {} };
+    remember();
+
+    /* People who ask their system for reduced motion get one sentence per visit, no rotation */
+    if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    var paused = false;
+    el.addEventListener("mouseenter", function () { paused = true; });
+    el.addEventListener("mouseleave", function () { paused = false; });
+
+    setInterval(function () {
+      if (paused || document.hidden) return;
+      el.classList.add("fading");
+      setTimeout(function () {
+        cur = pick(cur); show(cur); remember();
+        el.classList.remove("fading");
+      }, 400);
+    }, SECONDS * 1000);
   })();
   </script>
 
