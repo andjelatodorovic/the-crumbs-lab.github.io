@@ -1,0 +1,25 @@
+# Sentences shown under the logo on the home page. One is picked at random on every load.
+# Put the letter to highlight in square brackets: [C] [R] [U] [M] [B] [S].
+# Small linking words ("of", "and", "for") can go in between without brackets.
+# Keep the quotes around each line.
+
+- "[C]an [R]easoning [U]nveil [M]isaligned [B]ehaviour[S]?"
+- "[C]ounterfactuals [R]eveal [U]nderlying [M]odel [B]iases [S]ystematically"
+- "[C]ertifying [R]obustness [U]nder [M]odel [B]ehaviour [S]hifts"
+- "[C]ontrastive [R]easons [U]ncover [M]achine [B]lack-box [S]ecrets"
+- "[C]omputing [R]obust, [U]nderstandable [M]odel [B]ehaviour [S]ummaries"
+- "[C]an [R]obust [U]nderstanding [M]ake [B]etter [S]ystems?"
+- "[C]larity [R]equires [U]nderstanding [M]odels' [B]lind [S]pots"
+- "[C]onstraint [R]easoning [U]ncovers [M]odel [B]lind [S]pots"
+- "[C]an [R]easoning [U]ncover [M]odels' [B]est-kept [S]ecrets?"
+- "[C]ollecting [R]easons, [U]nderstanding [M]achines, [B]uilding [S]afeguards"
+- "[C]areful [R]easoning [U]nder [M]odel [B]ias and [S]hift"
+- "[C]an [R]ules [U]nmask [M]isbehaving [B]lack-box [S]ystems?"
+- "[C]urious [R]esearchers [U]npacking [M]achine [B]rain[S]"
+- "[C]hasing [R]easons [U]ntil [M]odels [B]ecome [S]ensible"
+- "[C]ompositional [R]easoning for [U]nderstanding [M]odern [B]lack-box [S]ystems"
+- "[C]onvincing [R]easons, [U]nbiased [M]odels, [B]etter [S]ociety"
+- "[C]ounterfactual [R]ecourse [U]nder [M]odel [B]ehaviour [S]hifts"
+- "[C]onnecting [R]easoning, [U]nderstanding, [M]achine learning, [B]elief and [S]afety"
+- "[C]an [R]ecourse [U]ndo [M]achine-made [B]ad [S]ituations?"
+- "[C]lear [R]easons [U]nder [M]ultiple [B]elievable [S]cenarios"

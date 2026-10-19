@@ -9,11 +9,22 @@ permalink: /
   <img class="hero-logo" src="{{ '/images/logo/logo.png' | relative_url }}" alt="CRUMBS: Learning · Reasoning · Explanation">
   {% endif %}
 
-  <p class="pillars-text" aria-label="Learning, Reasoning, Explanation">
-    <span class="w1">Learning</span><span class="node"></span>
-    <span class="w2">Reasoning</span><span class="node"></span>
-    <span class="w3">Explanation</span>
-  </p>
+  {% assign crumbs_first = site.data.crumbs_sentences | first %}
+  <p class="crumbs-sentence" id="crumbs-sentence">{{ crumbs_first | replace: "[", '<span class="acro">' | replace: "]", "</span>" }}</p>
+  <script>
+  (function () {
+    var all = {{ site.data.crumbs_sentences | jsonify }};
+    if (!all || all.length < 2) return;
+    var last = -1;
+    try { last = parseInt(sessionStorage.getItem("crumbs-last"), 10); } catch (e) {}
+    var i;
+    do { i = Math.floor(Math.random() * all.length); } while (i === last);
+    try { sessionStorage.setItem("crumbs-last", i); } catch (e) {}
+    var esc = function (t) { return t.replace(/&/g, "&amp;").replace(/</g, "&lt;"); };
+    document.getElementById("crumbs-sentence").innerHTML =
+      esc(all[i]).replace(/\[([^\]]+)\]/g, '<span class="acro">$1</span>');
+  })();
+  </script>
 
   <p class="lead">CRUMBS is a research group in the Department of Computing at Imperial College London. Our goal is to develop methods to make AI transparent and safe, with a focus on explainability across learning and symbolic systems.</p>
 
@@ -22,7 +33,7 @@ permalink: /
     <a class="btn" href="{{ '/team/' | relative_url }}">Meet the team</a>
   </div>
 
-  </section>
+</section>
 
 <div class="wrap">{% include trace-line.html variant=1 %}</div>
 
