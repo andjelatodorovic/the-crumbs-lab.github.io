@@ -113,6 +113,8 @@ h3{font-size:1.15rem;font-weight:600}
 .pub-links{display:flex;gap:6px;margin-top:6px}
 .pub-links a{font-family:var(--sans);font-size:.8rem;padding:2px 10px;border:1px solid var(--line);border-radius:999px;text-decoration:none}
 .pub-links a:hover{border-color:var(--sky);background:var(--sky-soft)}
+.pub-year{margin:1.6em 0 .2em;padding-bottom:6px;border-bottom:2px solid var(--sky-line)}
+.pub-year:first-of-type{margin-top:.6em}
 
 /* Footer */
 .site-footer{padding:8px 0 32px;font-family:var(--sans);font-size:.9rem;color:var(--muted)}

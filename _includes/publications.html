@@ -1,6 +1,9 @@
 {% comment %}Generated from _data/publications.yml. See README.md (Publications).{% endcomment %}
+{% assign years = site.data.publications | group_by_exp: "p", "p.year | append: '' | slice: 0, 4" %}
+{% for y in years %}
+<h3 class="pub-year" id="year-{{ y.name }}">{{ y.name }}</h3>
 <ul class="pubs">
-{% for p in site.data.publications %}
+  {% for p in y.items %}
   <li class="pub" id="{{ p.id }}">
     <span class="pub-tag">{{ p.tag }}</span>
     <span class="pub-title">{{ p.title | escape }}</span>
@@ -16,5 +19,6 @@
     </span>
     {% endif %}
   </li>
-{% endfor %}
+  {% endfor %}
 </ul>
+{% endfor %}
