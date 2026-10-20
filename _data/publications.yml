@@ -1,0 +1,875 @@
+# GENERATED FILE - do not edit by hand. See README.md (Publications).
+- id: probabilistically-robust-counterfactual-explanations-under-model-changes
+  tag: Journal
+  title: Probabilistically Robust Counterfactual Explanations under Model Changes
+  authors:
+  - name: L. Marzari
+    member: false
+  - name: F. Leofante
+    member: true
+  - name: F. Cicalese
+    member: false
+  - name: A. Farinelli
+    member: false
+  et_al: false
+  venue: Artificial Intelligence
+  year: '2026'
+  pdf: null
+  url: null
+  code: null
+- id: attribution-based-explanations-for-markov-decision-processes
+  tag: Conference
+  title: Attribution-based Explanations for Markov Decision Processes
+  authors:
+  - name: P. Kobialka
+    member: false
+  - name: A. Pferscher
+    member: false
+  - name: F. Leofante
+    member: true
+  - name: E. Ábrahám
+    member: false
+  - name: S. Tapia Tarifa
+    member: false
+  - name: E. Broch Johnsen
+    member: false
+  et_al: false
+  venue: Proc. of IJCAI
+  year: '2026'
+  pdf: null
+  url: null
+  code: null
+- id: efficient-bias-mitigation-in-t2i-diffusion-models-using-concept-graphs
+  tag: Conference
+  title: Efficient bias mitigation in T2I diffusion models using Concept Graphs
+  authors:
+  - name: Mansi
+    member: true
+  - name: A. Kori
+    member: false
+  - name: F. Leofante
+    member: true
+  et_al: false
+  venue: Proc. of NeurIPS
+  year: 2026 (to appear)
+  pdf: null
+  url: null
+  code: null
+- id: enhancing-the-robustness-of-counterfactual-explanations-via-adversarial-training
+  tag: Conference
+  title: Enhancing the Robustness of Counterfactual Explanations via Adversarial Training
+  authors:
+  - name: R. Appachi Senthilkumar
+    member: false
+  - name: F. Leofante
+    member: true
+  - name: V. Ganesh
+    member: false
+  et_al: false
+  venue: Proc. of SAIV
+  year: '2026'
+  pdf: null
+  url: null
+  code: null
+- id: synthesising-counterfactual-explanations-via-label-conditional-gaussian-mixture
+  tag: Conference
+  title: Synthesising Counterfactual Explanations via Label-Conditional Gaussian Mixture Variational Autoencoders
+  authors:
+  - name: J. Jiang
+    member: false
+  - name: F. Leofante
+    member: true
+  - name: A. Rago
+    member: false
+  - name: F. Toni
+    member: false
+  et_al: false
+  venue: Proc. of ICLR
+  year: 2026 (to appear)
+  pdf: null
+  url: null
+  code: null
+- id: what-if-counterfactual-explanations-were-to-be-deployed
+  tag: Conference
+  title: What if...Counterfactual Explanations Were to Be Deployed?
+  authors:
+  - name: F. Leofante
+    member: true
+  et_al: false
+  venue: Proc. of IJCAI
+  year: '2026'
+  pdf: https://www.ijcai.org/proceedings/2026/0907.pdf
+  url: null
+  code: null
+- id: robust-explainable-ai
+  tag: Book
+  title: Robust Explainable AI
+  authors:
+  - name: Francesco Leofante
+    member: true
+  - name: Matthew Wicker
+    member: false
+  et_al: false
+  venue: Springer
+  year: '2025'
+  pdf: null
+  url: https://link.springer.com/book/9783031890215
+  code: null
+- id: explainable-ai-energy-and-critical-infrastructure-systems
+  tag: Journal
+  title: Explainable AI, Energy and Critical Infrastructure Systems
+  authors:
+  - name: F. Leofante
+    member: true
+  - name: A. Artelt
+    member: false
+  - name: D. Eliades
+    member: false
+  - name: A. Korre
+    member: false
+  - name: F. Toni
+    member: false
+  - name: T. Miller
+    member: false
+  et_al: false
+  venue: AI Magazine
+  year: '2025'
+  pdf: null
+  url: null
+  code: null
+- id: explainable-ai-definition-and-attributes-of-a-good-explanation-for-health-ai
+  tag: Journal
+  title: 'Explainable AI: definition and attributes of a good explanation for health AI'
+  authors:
+  - name: E. Kyrimi
+    member: false
+  et_al: true
+  venue: AI Ethics
+  year: '2025'
+  pdf: https://arxiv.org/pdf/2409.15338
+  url: null
+  code: null
+- id: counterfactual-explanations-under-model-multiplicity-and-their-use-in-computatio
+  tag: Conference
+  title: Counterfactual Explanations under Model Multiplicity and their Use in Computational Argumentation
+  authors:
+  - name: G. Alfano
+    member: false
+  - name: A. Gould
+    member: false
+  - name: F. Leofante
+    member: true
+  - name: A. Rago
+    member: false
+  - name: F. Toni
+    member: false
+  et_al: false
+  venue: Proc. of IJCAI
+  year: '2025'
+  pdf: null
+  url: null
+  code: null
+- id: counterfactual-scenarios-for-automated-planning
+  tag: Conference
+  title: Counterfactual Scenarios for Automated Planning
+  authors:
+  - name: N. Gigante
+    member: false
+  - name: F. Leofante
+    member: true
+  - name: A. Micheli
+    member: false
+  et_al: false
+  venue: Proc. of KR
+  year: '2025'
+  pdf: null
+  url: null
+  code: null
+- id: counterfactual-strategies-for-markov-decision-processes
+  tag: Conference
+  title: Counterfactual Strategies for Markov Decision Processes
+  authors:
+  - name: P. Kobialka
+    member: false
+  - name: L. Gerlach
+    member: false
+  - name: F. Leofante
+    member: true
+  - name: E. Ábrahám
+    member: false
+  - name: S. Tapia Tarifa
+    member: false
+  - name: E. Broch Johnsen
+    member: false
+  et_al: false
+  venue: Proc. of IJCAI
+  year: '2025'
+  pdf: null
+  url: null
+  code: null
+- id: representation-consistency-for-accurate-and-coherent-llm-answer-aggregation
+  tag: Conference
+  title: Representation Consistency for Accurate and Coherent LLM Answer Aggregation
+  authors:
+  - name: J. Jiang
+    member: false
+  - name: T. Bewley
+    member: false
+  - name: S. Amoukou
+    member: false
+  - name: F. Leofante
+    member: true
+  - name: A. Rago
+    member: false
+  - name: S. Mishra
+    member: false
+  - name: F. Toni
+    member: false
+  et_al: false
+  venue: Proc. of NeurIPS
+  year: '2025'
+  pdf: null
+  url: null
+  code: null
+- id: robustx-robust-counterfactual-explanations-made-easy
+  tag: Conference
+  title: 'RobustX: Robust Counterfactual Explanations Made Easy'
+  authors:
+  - name: J. Jiang
+    member: false
+  - name: L. Marzari
+    member: false
+  - name: A. Purohit
+    member: false
+  - name: F. Leofante
+    member: true
+  et_al: false
+  venue: Proc. of IJCAI
+  year: '2025'
+  pdf: null
+  url: null
+  code: null
+- id: interval-abstractions-for-robust-counterfactual-explanations
+  tag: Journal
+  title: Interval Abstractions for Robust Counterfactual Explanations
+  authors:
+  - name: J. Jiang
+    member: false
+  - name: F. Leofante
+    member: true
+  - name: A. Rago
+    member: false
+  - name: F. Toni
+    member: false
+  et_al: false
+  venue: Artificial Intelligence
+  year: '2024'
+  pdf: https://arxiv.org/pdf/2404.13736
+  url: null
+  code: null
+- id: contestable-ai-needs-computational-argumentation
+  tag: Conference
+  title: Contestable AI needs Computational Argumentation
+  authors:
+  - name: F. Leofante
+    member: true
+  et_al: true
+  venue: Proc. of KR
+  year: '2024'
+  pdf: null
+  url: null
+  code: null
+- id: promoting-counterfactual-robustness-through-diversity
+  tag: Conference
+  title: Promoting Counterfactual Robustness through Diversity
+  authors:
+  - name: F. Leofante
+    member: true
+  - name: N. Potyka
+    member: false
+  et_al: false
+  venue: Proc. of AAAI
+  year: '2024'
+  pdf: null
+  url: null
+  code: null
+- id: recourse-under-model-multiplicity-via-argumentative-ensembling
+  tag: Conference
+  title: Recourse under Model Multiplicity via Argumentative Ensembling
+  authors:
+  - name: J. Jiang
+    member: false
+  - name: F. Leofante
+    member: true
+  - name: A. Rago
+    member: false
+  - name: F. Toni
+    member: false
+  et_al: false
+  venue: Proc. of AAMAS
+  year: '2024'
+  pdf: null
+  url: null
+  code: null
+- id: rigorous-probabilistic-guarantees-for-robust-counterfactual-explanations
+  tag: Conference
+  title: Rigorous Probabilistic Guarantees for Robust Counterfactual Explanations
+  authors:
+  - name: L. Marzari
+    member: false
+  - name: F. Leofante
+    member: true
+  - name: F. Cicalese
+    member: false
+  - name: A. Farinelli
+    member: false
+  et_al: false
+  venue: Proc. of ECAI
+  year: '2024'
+  pdf: https://arxiv.org/pdf/2407.07482
+  url: null
+  code: null
+- id: robust-counterfactual-explanations-in-machine-learning-a-survey
+  tag: Conference
+  title: 'Robust Counterfactual Explanations in Machine Learning: A Survey'
+  authors:
+  - name: J. Jiang
+    member: false
+  - name: F. Leofante
+    member: true
+  - name: A. Rago
+    member: false
+  - name: F. Toni
+    member: false
+  et_al: false
+  venue: Proc. of IJCAI
+  year: '2024'
+  pdf: null
+  url: null
+  code: null
+- id: explaining-deep-time-series-models-in-finance-are-we-there-yet
+  tag: Workshop
+  title: 'Explaining Deep Time Series Models in Finance: Are We There Yet?'
+  authors:
+  - name: E. Albini
+    member: true
+  - name: F. Leofante
+    member: true
+  - name: F. Toni
+    member: false
+  et_al: false
+  venue: Proc. of AIFin@ECAI
+  year: '2024'
+  pdf: null
+  url: null
+  code: null
+- id: omtplan-a-tool-for-optimal-planning-modulo-theories
+  tag: Journal
+  title: 'OMTPlan: a Tool for Optimal Planning Modulo Theories'
+  authors:
+  - name: F. Leofante
+    member: true
+  et_al: false
+  venue: Journal on Satisfiability, Boolean Modeling and Computation
+  year: '2023'
+  pdf: null
+  url: null
+  code: null
+- id: counterfactual-explanations-and-model-multiplicity-a-relational-verification-vie
+  tag: Conference
+  title: 'Counterfactual Explanations and Model Multiplicity: a Relational Verification View'
+  authors:
+  - name: F. Leofante
+    member: true
+  - name: E. Botoeva
+    member: false
+  - name: V. Rajani
+    member: false
+  et_al: false
+  venue: Proc. of KR
+  year: '2023'
+  pdf: null
+  url: null
+  code: null
+- id: formalising-the-robustness-of-counterfactual-explanations-for-neural-networks
+  tag: Conference
+  title: Formalising the Robustness of Counterfactual Explanations for Neural Networks
+  authors:
+  - name: J. Jiang
+    member: false
+  - name: F. Leofante
+    member: true
+  - name: A. Rago
+    member: false
+  - name: F. Toni
+    member: false
+  et_al: false
+  venue: Proc. of AAAI
+  year: '2023'
+  pdf: null
+  url: null
+  code: null
+- id: provably-robust-and-plausible-counterfactual-explanations-for-neural-networks-vi
+  tag: Conference
+  title: Provably Robust and Plausible Counterfactual Explanations for Neural Networks via Robust Optimisation
+  authors:
+  - name: J. Jiang
+    member: false
+  - name: J. Lan
+    member: false
+  - name: F. Leofante
+    member: true
+  - name: A. Rago
+    member: false
+  - name: F. Toni
+    member: false
+  et_al: false
+  venue: Proc. of ACML
+  year: '2023'
+  pdf: null
+  url: null
+  code: null
+- id: robust-explanations-for-human-neural-multi-agent-systems-with-formal-verificatio
+  tag: Conference
+  title: Robust Explanations for Human-Neural Multi-agent Systems with Formal Verification
+  authors:
+  - name: F. Leofante
+    member: true
+  - name: A. Lomuscio
+    member: false
+  et_al: false
+  venue: Proc. of EUMAS
+  year: '2023'
+  pdf: null
+  url: null
+  code: null
+- id: towards-robust-contrastive-explanations-for-human-neural-multi-agent-systems
+  tag: Conference
+  title: Towards Robust Contrastive Explanations for Human-Neural Multi-agent Systems
+  authors:
+  - name: F. Leofante
+    member: true
+  - name: A. Lomuscio
+    member: false
+  et_al: false
+  venue: Proc. of AAMAS
+  year: '2023'
+  pdf: null
+  url: null
+  code: null
+- id: verification-of-semantic-key-point-detection-for-aircraft-pose-estimation
+  tag: Conference
+  title: Verification of Semantic Key Point Detection for Aircraft Pose Estimation
+  authors:
+  - name: P. Kouvaros
+    member: false
+  - name: F. Leofante
+    member: true
+  - name: B. Edwards
+    member: false
+  - name: C. Chung
+    member: false
+  - name: D. Margineantu
+    member: false
+  - name: A. Lomuscio
+    member: false
+  et_al: false
+  venue: Proc. of KR
+  year: '2023'
+  pdf: null
+  url: null
+  code: null
+- id: verification-friendly-networks-the-case-for-parametric-relus
+  tag: Conference
+  title: 'Verification-friendly Networks: The Case for Parametric ReLUs'
+  authors:
+  - name: F. Leofante
+    member: true
+  - name: P. Henriksen
+    member: false
+  - name: A. Lomuscio
+    member: false
+  et_al: false
+  venue: Proc. of IJCNN
+  year: '2023'
+  pdf: null
+  url: null
+  code: null
+- id: repairing-misclassifications-in-neural-networks-using-limited-data
+  tag: Conference
+  title: Repairing Misclassifications in Neural Networks Using Limited Data
+  authors:
+  - name: P. Henriksen
+    member: false
+  - name: F. Leofante
+    member: true
+  - name: A. Lomuscio
+    member: false
+  et_al: false
+  venue: Proc. of SAC
+  year: '2022'
+  pdf: null
+  url: null
+  code: null
+- id: formal-analysis-of-neural-network-based-systems-in-the-aircraft-domain
+  tag: Conference
+  title: Formal Analysis of Neural Network-based Systems in the Aircraft Domain
+  authors:
+  - name: P. Kouvaros
+    member: false
+  - name: T. Kyono
+    member: false
+  - name: F. Leofante
+    member: true
+  - name: A. Lomuscio
+    member: false
+  - name: D. Margineantu
+    member: false
+  - name: D. Osipychev
+    member: false
+  - name: Y. Zheng
+    member: false
+  et_al: false
+  venue: Proc. of FM
+  year: '2021'
+  pdf: null
+  url: null
+  code: null
+- id: robot-swarms-as-hybrid-systems-modelling-and-verification
+  tag: Workshop
+  title: 'Robot Swarms as Hybrid Systems: Modelling and Verification'
+  authors:
+  - name: S. Schupp
+    member: false
+  - name: F. Leofante
+    member: true
+  - name: L. Behr
+    member: false
+  - name: E. Ábrahám
+    member: false
+  - name: A. Tacchella
+    member: false
+  et_al: false
+  venue: Proc. of SNR@ETAPS
+  year: '2021'
+  pdf: null
+  url: null
+  code: null
+- id: optimal-planning-modulo-theories
+  tag: Conference
+  title: Optimal Planning Modulo Theories
+  authors:
+  - name: F. Leofante
+    member: true
+  - name: E. Giunchiglia
+    member: false
+  - name: E. Ábrahám
+    member: false
+  - name: A. Tacchella
+    member: false
+  et_al: false
+  venue: Proc. of IJCAI
+  year: '2020'
+  pdf: null
+  url: null
+  code: null
+- id: verification-of-neural-networks-enhancing-scalability-through-pruning
+  tag: Conference
+  title: 'Verification of Neural Networks: Enhancing Scalability through Pruning'
+  authors:
+  - name: D. Guidotti
+    member: false
+  - name: F. Leofante
+    member: true
+  - name: L. Pulina
+    member: false
+  - name: A. Tacchella
+    member: false
+  et_al: false
+  venue: Proc. of ECAI
+  year: '2020'
+  pdf: null
+  url: null
+  code: null
+- id: arch-comp20-category-report-artificial-intelligence-and-neural-network-control-s
+  tag: Workshop
+  title: 'ARCH-COMP20 Category Report: Artificial Intelligence and Neural Network Control Systems (AINNCS) for Continuous and Hybrid Systems Plants'
+  authors:
+  - name: T. Johnson
+    member: false
+  - name: D. Manzanas Lopez
+    member: false
+  - name: P. Musau
+    member: false
+  - name: H. Tran
+    member: false
+  - name: E. Botoeva
+    member: false
+  - name: F. Leofante
+    member: true
+  - name: A. Maleki
+    member: false
+  - name: C. Sidrane
+    member: false
+  - name: J. Fan
+    member: false
+  - name: C. Huang
+    member: false
+  et_al: false
+  venue: Proc. of ARCH Workshop
+  year: '2020'
+  pdf: null
+  url: null
+  code: null
+- id: optimal-planning-modulo-theories-thesis
+  tag: Thesis
+  title: Optimal Planning Modulo Theories
+  authors:
+  - name: F. Leofante
+    member: true
+  et_al: false
+  venue: RWTH Aachen University and University of Genoa
+  year: '2020'
+  pdf: null
+  url: null
+  code: null
+- id: improving-reliability-of-myocontrol-using-formal-verification
+  tag: Journal
+  title: Improving Reliability of Myocontrol Using Formal Verification
+  authors:
+  - name: D. Guidotti
+    member: false
+  - name: F. Leofante
+    member: true
+  - name: A. Tacchella
+    member: false
+  - name: C. Castellini
+    member: false
+  et_al: false
+  venue: IEEE Transactions on Neural Systems and Rehabilitation Engineering
+  year: '2019'
+  pdf: null
+  url: null
+  code: null
+- id: integrated-synthesis-and-execution-of-optimal-plans-for-multi-robot-systems-in-l
+  tag: Journal
+  title: Integrated Synthesis and Execution of Optimal Plans for Multi-Robot Systems in Logistics
+  authors:
+  - name: F. Leofante
+    member: true
+  - name: E. Ábrahám
+    member: false
+  - name: T. Niemueller
+    member: false
+  - name: G. Lakemeyer
+    member: false
+  - name: A. Tacchella
+    member: false
+  et_al: false
+  venue: Information Systems Frontiers
+  year: '2019'
+  pdf: null
+  url: null
+  code: null
+- id: engineering-controllers-for-swarm-robotics-via-reachability-analysis-in-hybrid-s
+  tag: Conference
+  title: Engineering Controllers for Swarm Robotics via Reachability Analysis in Hybrid Systems
+  authors:
+  - name: F. Leofante
+    member: true
+  - name: S. Schupp
+    member: false
+  - name: E. Ábrahám
+    member: false
+  - name: A. Tacchella
+    member: false
+  et_al: false
+  venue: Proc. of ECMS
+  year: '2019'
+  pdf: null
+  url: null
+  code: null
+- id: repairing-learned-controllers-with-convex-optimization-a-case-study
+  tag: Conference
+  title: 'Repairing learned controllers with convex optimization: A case study'
+  authors:
+  - name: D. Guidotti
+    member: false
+  - name: F. Leofante
+    member: true
+  - name: A. Tacchella
+    member: false
+  - name: C. Castellini
+    member: false
+  et_al: false
+  venue: Proc. of CPAIOR
+  year: '2019'
+  pdf: null
+  url: null
+  code: null
+- id: smt-based-planning-for-robots-in-smart-factories
+  tag: Conference
+  title: SMT-based Planning for Robots in Smart Factories
+  authors:
+  - name: A. Bit-Monnot
+    member: false
+  - name: F. Leofante
+    member: true
+  - name: L. Pulina
+    member: false
+  - name: A. Tacchella
+    member: false
+  et_al: false
+  venue: Proc. of IEA/AIE
+  year: '2019'
+  pdf: null
+  url: null
+  code: null
+- id: verification-and-repair-of-neural-networks-a-progress-report-on-convolutional-mo
+  tag: Conference
+  title: 'Verification and Repair of Neural Networks: A Progress Report on Convolutional Models'
+  authors:
+  - name: D. Guidotti
+    member: false
+  - name: F. Leofante
+    member: true
+  - name: L. Pulina
+    member: false
+  - name: A. Tacchella
+    member: false
+  et_al: false
+  venue: Proc. of AI*IA
+  year: '2019'
+  pdf: null
+  url: null
+  code: null
+- id: reasoning-about-neural-networks-a-taxonomy-of-current-approaches
+  tag: Workshop
+  title: 'Reasoning about Neural Networks: a Taxonomy of Current Approaches'
+  authors:
+  - name: F. Leofante
+    member: true
+  - name: N. Narodytska
+    member: false
+  - name: L. Pulina
+    member: false
+  - name: A. Tacchella
+    member: false
+  et_al: false
+  venue: Proc. of VNN
+  year: '2019'
+  pdf: null
+  url: null
+  code: null
+- id: guaranteed-plans-for-multi-robot-systems-via-optimization-modulo-theories
+  tag: Conference
+  title: Guaranteed Plans for Multi-Robot Systems via Optimization Modulo Theories
+  authors:
+  - name: F. Leofante
+    member: true
+  et_al: false
+  venue: Proc. of AAAI
+  year: '2018'
+  pdf: null
+  url: null
+  code: null
+- id: optimal-multi-robot-task-planning-from-synthesis-to-execution-and-back
+  tag: Conference
+  title: 'Optimal Multi-robot Task Planning: From Synthesis to Execution (and Back)'
+  authors:
+  - name: F. Leofante
+    member: true
+  et_al: false
+  venue: Proc. of IJCAI
+  year: '2018'
+  pdf: null
+  url: null
+  code: null
+- id: task-planning-with-omt-an-application-to-production-logistics
+  tag: Conference
+  title: 'Task Planning with OMT: An Application to Production Logistics'
+  authors:
+  - name: F. Leofante
+    member: true
+  - name: E. Ábrahám
+    member: false
+  - name: A. Tacchella
+    member: false
+  et_al: false
+  venue: Proc. of IFM
+  year: '2018'
+  pdf: null
+  url: null
+  code: null
+- id: on-the-synthesis-of-guaranteed-quality-plans-for-robot-fleets-in-logistics-scena
+  tag: Conference
+  title: On the Synthesis of Guaranteed-Quality Plans for Robot Fleets in Logistics Scenarios via Optimization Modulo Theories
+  authors:
+  - name: F. Leofante
+    member: true
+  - name: E. Ábrahám
+    member: false
+  - name: T. Niemueller
+    member: false
+  - name: G. Lakemeyer
+    member: false
+  - name: A. Tacchella
+    member: false
+  et_al: false
+  venue: Proc of IRI
+  year: '2017'
+  pdf: null
+  url: null
+  code: null
+- id: towards-clips-based-task-execution-and-monitoring-with-smt-based-decision-optimi
+  tag: Workshop
+  title: Towards CLIPS-based Task Execution and Monitoring with SMT-based Decision Optimization
+  authors:
+  - name: T. Niemueller
+    member: false
+  - name: G. Lakemeyer
+    member: false
+  - name: F. Leofante
+    member: true
+  - name: E. Ábrahám
+    member: false
+  et_al: false
+  venue: Proc. of PlanRob@ICAPS
+  year: '2017'
+  pdf: null
+  url: null
+  code: null
+- id: combining-static-and-runtime-methods-to-achieve-safe-standing-up-for-humanoid-ro
+  tag: Conference
+  title: Combining Static and Runtime Methods to Achieve Safe Standing-Up for Humanoid Robots
+  authors:
+  - name: F. Leofante
+    member: true
+  - name: S. Vuotto
+    member: false
+  - name: E. Ábrahám
+    member: false
+  - name: A. Tacchella
+    member: false
+  - name: N. Jansen
+    member: false
+  et_al: false
+  venue: Proc. of ISoLA
+  year: '2016'
+  pdf: null
+  url: null
+  code: null
+- id: learning-in-physical-domains-mating-safety-requirements-and-costly-sampling
+  tag: Conference
+  title: 'Learning in Physical Domains: Mating Safety Requirements and Costly Sampling'
+  authors:
+  - name: F. Leofante
+    member: true
+  - name: A. Tacchella
+    member: false
+  et_al: false
+  venue: Proc. of AI*IA
+  year: '2016'
+  pdf: null
+  url: null
+  code: null
