@@ -90,7 +90,10 @@ def same_paper(a, b):
 
 
 def fetch(url, timeout=60):
-    req = urllib.request.Request(url, headers={"User-Agent": "crumbs-website-publications"})
+    req = urllib.request.Request(url, headers={
+        "User-Agent": "CRUMBS-website-bot/1.0 (+https://the-crumbs-lab.github.io)",
+        "Accept": "application/xml, text/xml, */*",
+    })
     return urllib.request.urlopen(req, timeout=timeout)
 
 
@@ -127,9 +130,11 @@ DBLP_TAGS = {"article": "Journal", "inproceedings": "Conference", "book": "Book"
 ARXIV_RE = re.compile(r"arxiv(?:\.org/abs/|\.)(\d{4}\.\d{4,5})", re.I)
 
 
-def read_dblp():
-    with fetch(f"https://dblp.org/pid/{DBLP_PID}.xml") as r:
-        root = ET.fromstring(r.read())
+DBLP_MIRRORS = ["https://dblp.org", "https://dblp.uni-trier.de", "https://dblp.dagstuhl.de"]
+
+
+def parse_dblp(body):
+    root = ET.fromstring(body)
     entries = []
     for rec in root.findall("r"):
         e = rec[0]
@@ -156,6 +161,24 @@ def read_dblp():
             "doi": doi, "arxiv": arxiv,
         })
     return entries
+
+
+def read_dblp():
+    """Try each DBLP mirror a few times; raise with details if all fail."""
+    errors = []
+    for base in DBLP_MIRRORS:
+        url = f"{base}/pid/{DBLP_PID}.xml"
+        for attempt in range(1, 4):
+            try:
+                with fetch(url) as r:
+                    status, body = r.status, r.read()
+                if b"<dblpperson" not in body[:3000]:
+                    raise ValueError(f"HTTP {status}, response starts with {body[:80]!r}")
+                return parse_dblp(body)
+            except Exception as err:
+                errors.append(f"{url} (attempt {attempt}): {err}")
+                time.sleep(5 * attempt)
+    raise RuntimeError(" | ".join(errors[-3:]))
 
 
 def s2_pdf(doi, title):
@@ -200,8 +223,12 @@ def main():
     try:
         dblp = read_dblp()
     except Exception as err:
-        sys.exit(f"Could not read DBLP ({err}); leaving {OUTPUT} unchanged.")
-
+        if os.path.exists(OUTPUT):
+            print(f"::warning::Could not read DBLP, keeping the current list. Details: {err}")
+            sys.exit(0)
+        print(f"::warning::Could not read DBLP, building from the CV only. Details: {err}")
+        dblp = []
+        
     overrides = {}
     if os.path.exists(OVERRIDES):
         with open(OVERRIDES, encoding="utf-8") as f:
