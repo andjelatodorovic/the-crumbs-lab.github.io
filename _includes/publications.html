@@ -1,0 +1,20 @@
+{% comment %}Generated from _data/publications.yml. See README.md (Publications).{% endcomment %}
+<ul class="pubs">
+{% for p in site.data.publications %}
+  <li class="pub" id="{{ p.id }}">
+    <span class="pub-tag">{{ p.tag }}</span>
+    <span class="pub-title">{{ p.title | escape }}</span>
+    <span class="pub-meta">
+      {% for a in p.authors %}{% if a.member %}<strong>{{ a.name | escape }}</strong>{% else %}{{ a.name | escape }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}{% if p.et_al %} et al.{% endif %}.
+      {% if p.venue and p.venue != "" %}<em>{{ p.venue | escape }}</em>, {% endif %}{{ p.year }}.
+    </span>
+    {% if p.pdf or p.url or p.code %}
+    <span class="pub-links">
+      {% if p.pdf %}<a href="{{ p.pdf }}">PDF</a>{% endif %}
+      {% if p.url %}<a href="{{ p.url }}">Paper</a>{% endif %}
+      {% if p.code %}<a href="{{ p.code }}">Code</a>{% endif %}
+    </span>
+    {% endif %}
+  </li>
+{% endfor %}
+</ul>

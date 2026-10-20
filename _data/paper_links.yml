@@ -1,0 +1,10 @@
+# Hand-written links and fixes for the publications list.
+# Each entry starts with the paper's id. To find it, search for the paper's
+# title in _data/publications.yml. Full instructions: README.md (Publications).
+#
+# Example:
+#
+# efficient-bias-mitigation-in-t2i-diffusion-models-using-concept-graphs:
+#   code: https://github.com/the-crumbs-lab/concept-graphs
+#
+# Other options: pdf, tag (e.g. Workshop), venue, hide: true

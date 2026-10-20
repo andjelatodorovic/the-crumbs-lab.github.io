@@ -14,7 +14,9 @@ links:
   - { label: GitHub, url: "https://github.com/fraleo" }
   - { label: LinkedIn, url: "https://www.linkedin.com/in/francescoleofante" }
 ---
-Francesco Leofante is an Assistant Professor in the Department of Computing at Imperial
-College London, where he is Co-Director of the Centre for Explainable AI. His research
-focuses on AI for decision making, with a particular emphasis on safety, explainability
-and alignment. He is a member of ELLIS and co-author of the book *Robust Explainable AI*.
+
+Hi! I’m Francesco, an Assistant Professor in the Department of Computing at Imperial College London, where I lead CRUMBS and co-direct the Centre for Explainable AI.
+
+My work combines learning and reasoning to build explanations that are rigorous, robust and actually useful to the people who rely on them. Lately I’ve been thinking a lot about counterfactual explanations, what happens when AI models interact with one another, and how explainability can support AI in critical domains like energy.
+
+I’m always happy to hear from curious, motivated people who want to work on explainable and trustworthy AI. If you’re interested in a PhD or postdoc, check the Vacancies page, then drop me an email telling me what excites you and how it connects to our work. As Claude once told me, “a thoughtful paragraph beats a generic CV every time.”

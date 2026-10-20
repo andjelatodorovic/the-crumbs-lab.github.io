@@ -11,38 +11,80 @@ permalink: /
 
   {% assign crumbs_first = site.data.crumbs_sentences | first %}
   <p class="crumbs-sentence" id="crumbs-sentence"><span>{{ crumbs_first | replace: "[", '<span class="acro">' | replace: "]", "</span>" }}</span></p>
-  <script>
+    <script>
   (function () {
     var all = {{ site.data.crumbs_sentences | jsonify }};
     var el = document.getElementById("crumbs-sentence");
     if (!el || !all || all.length < 2) return;
-    var SECONDS = 6;  /* how long each sentence stays */
+
+    var TYPE_MS = 55;     /* ms per letter when typing */
+    var DELETE_MS = 25;   /* ms per letter when deleting */
+    var HOLD_MS = 4000;   /* how long a full sentence stays visible */
+    var GAP_MS = 400;     /* pause between deleting and typing the next one */
+
+    /* Turn "[C]an [R]easoning..." into letters, remembering which are highlighted */
+    var parse = function (s) {
+      var out = [], acro = false;
+      for (var k = 0; k < s.length; k++) {
+        var c = s.charAt(k);
+        if (c === "[") { acro = true; continue; }
+        if (c === "]") { acro = false; continue; }
+        out.push({ c: c, acro: acro });
+      }
+      return out;
+    };
     var esc = function (t) { return t.replace(/&/g, "&amp;").replace(/</g, "&lt;"); };
-    var show = function (i) { el.innerHTML = "<span>" + esc(all[i]).replace(/\[([^\]]+)\]/g, '<span class="acro">$1</span>') + "</span>"; };
+
+    /* Show the first n letters, keeping the acronym highlighting */
+    var render = function (chars, n) {
+      var html = "", open = false;
+      for (var k = 0; k < n; k++) {
+        if (chars[k].acro && !open) { html += '<span class="acro">'; open = true; }
+        if (!chars[k].acro && open) { html += "</span>"; open = false; }
+        html += esc(chars[k].c);
+      }
+      if (open) html += "</span>";
+      el.innerHTML = "<span>" + html + "</span>";
+    };
+
     var pick = function (not) { var i; do { i = Math.floor(Math.random() * all.length); } while (i === not); return i; };
 
     var last = -1;
     try { last = parseInt(sessionStorage.getItem("crumbs-last"), 10); } catch (e) {}
     var cur = pick(last);
-    show(cur);
     var remember = function () { try { sessionStorage.setItem("crumbs-last", cur); } catch (e) {} };
+    var chars = parse(all[cur]);
+    var n = chars.length;
+    render(chars, n);
     remember();
 
-    /* People who ask their system for reduced motion get one sentence per visit, no rotation */
+    /* People who ask their system for reduced motion get one sentence per visit, no animation */
     if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    el.classList.add("typing");  /* turns on the blinking cursor */
 
     var paused = false;
     el.addEventListener("mouseenter", function () { paused = true; });
     el.addEventListener("mouseleave", function () { paused = false; });
 
-    setInterval(function () {
-      if (paused || document.hidden) return;
-      el.classList.add("fading");
-      setTimeout(function () {
-        cur = pick(cur); show(cur); remember();
-        el.classList.remove("fading");
-      }, 400);
-    }, SECONDS * 1000);
+    var deleting = true;
+    var step = function () {
+      if (paused || document.hidden) return setTimeout(step, 200);
+      if (deleting) {
+        render(chars, --n);
+        if (n === 0) {
+          deleting = false;
+          cur = pick(cur); remember();
+          chars = parse(all[cur]);
+          return setTimeout(step, GAP_MS);
+        }
+        return setTimeout(step, DELETE_MS);
+      }
+      render(chars, ++n);
+      if (n === chars.length) { deleting = true; return setTimeout(step, HOLD_MS); }
+      setTimeout(step, TYPE_MS);
+    };
+    setTimeout(step, HOLD_MS);
   })();
   </script>
 
